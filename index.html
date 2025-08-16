@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All Bengal Art Society</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Reduce gap between hero section and About Us */
+    section.hero {
+      padding-top: 140px; /* Reduced from large default */
+      padding-bottom: 20px;
+    }
+
+    .hero-buttons {
+      margin-bottom: 16px; /* Reduced space below button */
+    }
+
+    section.about-us {
+      margin-top: 10px !important; /* Reduce gap above About section */
+      padding: 40px 20px;
+      background-color: #fff;
+      color: #14213d;
+      border-radius: 10px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Center the View Full Results button */
+    section.results {
+      color: black;
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+      text-align: center; /* Center content including button */
+    }
+
+    /* Style and center the button */
+    section.results a.primary-btn {
+      background-color: #ffd100 !important;
+      color: #14213d !important;
+      border: none !important;
+      padding: 14px 30px !important;
+      border-radius: 10px !important;
+      font-weight: 600 !important;
+      text-decoration: none !important;
+      display: inline-block !important;
+      margin-top: 20px; /* space above button */
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Hover effect */
+    section.results a.primary-btn:hover {
+      background-color: #fff200 !important;
+    }
+
+    /* Footer styles */
+    footer.site-footer {
+      background-color: #14213d;
+      color: #ffd100;
+      text-align: center;
+      padding: 16px 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      user-select: none;
+      margin-top: 40px;
+      border-top: 2px solid #ffd100;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 850px) {
+      section.hero {
+        padding-top: 100px;
+      }
+      .hero-buttons {
+        margin-bottom: 12px;
+      }
+      section.about-us {
+        margin-top: 8px !important;
+        padding: 30px 16px;
+      }
+      section.results {
+        padding: 30px 16px;
+        margin: 40px auto;
+      }
+      footer.site-footer {
+        font-size: 0.85rem;
+        padding: 14px 12px;
+      }
+    }
+  </style>
+</head>
+<body class="home-page">
+  <header class="society-header" id="header">
+    <div class="logo-area">
+      <img src="photos/logo.png" alt="All Bengal Art Society Logo" class="site-logo" />
+      <div class="site-title">
+        <span class="brand-main">All Bengal Art Society</span>
+        <span class="brand-sub">Where Young Artists Begin Their Journey</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <h5 class="welcome-title">WELCOME TO</h5>
+    <h1 class="site-main-heading">All Bengal Art Society</h1>
+    <p class="site-subheading">
+      Promoting art, culture, and creativity across Bengal since inception.
+    </p>
+    <div class="hero-buttons">
+      <a href="membership.html" class="outline-btn">Join Us</a>
+    </div>
+  </section>
+
+  <section id="about" class="section about-us">
+    <h2>About Us</h2>
+    <p>
+      The All Bengal Art Society is dedicated to promoting art, culture, and creativity across the state. Since its inception,
+      our mission has been to nurture budding talents by providing them with a platform to showcase their creativity
+      and connect with the artistic community.
+    </p>
+    <p>
+      Through exhibitions, workshops, and community initiatives, we aim to inspire artists of all ages and
+      backgrounds while fostering cultural exchange and appreciation.
+    </p>
+  </section>
+
+  <section id="results" class="section results">
+    <h2>Results</h2>
+    <p>Here are the latest results from our recent competitions and events.</p>
+    <p style="font-style: italic; margin-bottom: 20px;">
+      Congratulations to our winners for their outstanding achievements. To all participants, remember that every step in your artistic journey adds value and growth—keep creating and shining your light.
+    </p>
+    <a href="https://drive.google.com/drive/folders/1cjG_YvglqRDsrNlh8MGuK9caVjNmU_EM" target="_blank" class="primary-btn">
+      View Full Results
+    </a>
+  </section>
+
+  <footer class="site-footer">
+    &copy; 2025 All Bengal Art Society. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

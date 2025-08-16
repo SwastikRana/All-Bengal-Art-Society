@@ -1,0 +1,708 @@
+/* Base Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a1121;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Fixed Header */
+header.society-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: #072a75;
+  padding: 38px 20px 32px 20px; /* Increased height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #213c5c;
+  z-index: 1000;
+}
+
+/* Header Content Alignment */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Increased gap */
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Logo Styling */
+.site-logo {
+  width: 120px;  /* Increased size */
+  height: 120px; /* Increased size */
+  border-radius: 50%;
+  object-fit: contain;
+  background: #fff;
+  border: 3px solid #ffd100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Site Title Styling */
+.site-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  user-select: none;
+}
+
+.brand-main {
+  color: #ffd100;
+  font-weight: 800;
+  font-size: 2.3rem;
+  letter-spacing: 0.7px;
+}
+
+.brand-sub {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 12px;
+  letter-spacing: 0.2px;
+}
+
+/* Fixed Navigation Bar */
+nav.main-nav {
+  position: fixed;
+  top: 170px; /* Adjusted for increased header */
+  left: 0;
+  width: 100vw;
+  background-color: #14213d;
+  border-bottom: 2px solid #213c5c;
+  display: flex;
+  justify-content: center;
+  padding: 12px 20px;
+  z-index: 9999;
+}
+
+/* Navigation Links */
+nav.main-nav > .nav-links {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links li a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: #ffd100;
+  color: #14213d;
+}
+
+/* Content Sections with Top Margin to Prevent Overlap */
+section.hero,
+section.about-us,
+section.results {
+  max-width: 900px;
+  margin: 230px auto 60px auto; /* Increased margin for bigger header */
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* About Us Section Styling: White Box */
+section.about-us {
+  background-color: #fff;
+  color: #14213d;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section Titles & Buttons */
+section.hero {
+  background-color: #0a1121;
+  color: white;
+  text-align: center;
+  user-select: none;
+}
+
+.welcome-title {
+  color: #ffd100;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.site-main-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.site-subheading {
+  font-size: 1.25rem;
+  color: #d1d6e0;
+  margin-bottom: 38px;
+  font-weight: 500;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.outline-btn {
+  border-radius: 10px;
+  padding: 16px 44px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.primary-btn {
+  background-color: #ffd100;
+  color: #14213d;
+  border: none;
+}
+
+.primary-btn:hover {
+  background-color: #fff200;
+}
+
+.outline-btn {
+  background-color: transparent;
+  color: #ffd100;
+  border: 2px solid #ffd100;
+}
+
+.outline-btn:hover {
+  background-color: #ffd100;
+  color: #14213d;
+}
+
+/* Results Section */
+section.results {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Result Items */
+.results-list {
+  margin-top: 30px;
+  text-align: left;
+  color: #14213d;
+}
+
+.result-item {
+  background-color: #fff;
+  padding: 18px 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.35rem;
+}
+
+.result-item p {
+  font-size: 1.1rem;
+  margin: 4px 0;
+}
+
+.section .primary-btn {
+  margin-top: 25px;
+}
+
+/* Responsive Styles */
+@media (max-width: 850px) {
+  header.society-header,
+  nav.main-nav {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  nav.main-nav > .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  section.hero,
+  section.about-us,
+  section.results {
+    padding: 30px 16px;
+    margin-top: 270px; /* Adjusted for smaller screens and bigger header */
+  }
+
+  .site-main-heading {
+    font-size: 2.3rem;
+  }
+
+  header.society-header {
+    padding: 28px 16px 22px 16px;
+    min-height: 140px;
+  }
+
+  .site-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .logo-area {
+    gap: 18px;
+  }
+
+  nav.main-nav {
+    top: 140px;
+  }
+}
+
+/* Membership Page Specific Styles */
+
+/* Container for membership form */
+.form-container {
+  max-width: 600px;
+  margin: 180px auto 60px auto; /* ensures form is visible below fixed header+nav */
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Address textarea container */
+.address-section {
+  background-color: #fff;
+  color: #14213d;
+  margin: 20px 0 0 0;
+  padding: 20px 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.address-section textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+/* Form labels */
+.form-container label {
+  font-weight: 600;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+/* Text and email inputs */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Radio button group */
+.radio-group {
+  margin-top: 12px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.radio-group label {
+  margin: 0;
+  font-weight: 600;
+  cursor: pointer;
+  color: #14213d;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Submit button */
+.form-container button.primary-btn {
+  background-color: #ffd100;
+  color: #14213d;
+  border: none;
+  padding: 14px 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button.primary-btn:hover {
+  background-color: #fff200;
+}
+
+/* Responsive adjustments for form */
+@media (max-width: 850px) {
+  .form-container {
+    margin: 200px 16px 0 16px;
+  }
+  .address-section {
+    padding: 15px 10px;
+  }
+  .radio-group {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+/* Make address textarea full width and consistent with other inputs */
+textarea#address {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 80px; /* Adjust height as needed */
+  color: #14213d;
+  background-color: white;
+  display: block;
+  margin-top: 6px;
+}
+
+/* Style radio button labels */
+.radio-group label {
+  font-size: 1.3rem;         /* Increase font size */
+  font-weight: 700;          /* Make text bold */
+  color: #ffd100;            /* Bright yellow color */
+  cursor: pointer;
+  margin-left: 10px;         /* Space from radio button */
+}
+
+/* Active nav link styling */
+.nav-links a.active {
+  background-color: #ffd100; /* yellow background */
+  color: #14213d;            /* dark text */
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+/* Ensure the section containing contact-info-box fills viewport width and centers child */
+#contact {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  padding-top: 180px; /* space below fixed header + nav */
+  box-sizing: border-box;
+  width: 100%;
+  min-height: calc(100vh - 180px); /* at least fill remaining viewport height */
+  background-color: transparent; /* optional */
+}
+
+/* Now style the contact-info-box */
+.contact-info-box {
+  max-width: 600px;
+  width: 100%; /* responsiveness */
+  padding: 20px;
+  background-color: #fff;
+  color: #14213d;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 850px) {
+  #contact {
+    padding-top: 220px;
+  }
+  .contact-info-box {
+    padding: 15px;
+    margin: 0 16px;
+  }
+}
+/* Gallery container with grid layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Images styling */
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover effect for images */
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Slideshow container and styles */
+.slideshow-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 17, 33, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+}
+
+/* Show the slideshow overlay */
+.slideshow-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Slide image */
+.slideshow-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+  object-fit: contain;
+  user-select: none;
+  cursor: default;
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+}
+
+/* Navigation buttons */
+.slideshow-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 3rem;
+  color: #ffd100;
+  background: rgba(20,33,61,0.7);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(-50%);
+  z-index: 10001;
+  transition: background-color 0.3s ease;
+}
+
+.slideshow-arrow:hover {
+  background: #ffd100;
+  color: #14213d;
+}
+
+.slideshow-arrow.prev {
+  left: 20px;
+}
+
+.slideshow-arrow.next {
+  right: 20px;
+}
+
+/* Close button */
+.slideshow-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 3rem;
+  color: #ffd100;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10001;
+  transition: color 0.3s ease;
+}
+
+.slideshow-close:hover {
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .nav-links li a {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+  .gallery {
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+  .slideshow-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    line-height: 38px;
+  }
+  .slideshow-close {
+    font-size: 2.5rem;
+  }
+}
+main.section {
+  padding-top: 230px; /* Enough space to clear fixed header + nav */
+  box-sizing: border-box;
+}
+/* Reduce the space between Membership heading and form */
+.form-container {
+  margin-top: 16px !important;
+}
+
+/* If your headings have extra margin below, reduce that as well */
+section.membership h2,
+#membership h2,
+.section h2 {
+  margin-bottom: 8px !important;
+}
+header.society-header {
+  /* existing styles... */
+  margin-bottom: 18px; /* Add more space between header and nav */
+}
+
+/* OR, add top margin to nav bar */
+nav.main-nav {
+  /* existing styles... */
+  margin-top: 35px; /* Adds vertical gap above menu */
+}
+
+
+
+
+/* For main/section content below nav */
+main.section, .section {
+  padding-top: 260px; /* adjust as needed for your site */
+  box-sizing: border-box;
+}
+
+/* Center main section headings */
+main.section h2,
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px; /* optional space below heading */
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #ffd100; /* highlight color */
+}
+
+/* Center nav links (single row or wrapped to multiple rows) */
+nav.main-nav > .nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px 0;
+  list-style: none;
+  box-sizing: border-box;
+  gap: 18px;
+}
+.nav-links li {
+  flex: none;
+  margin: 0;
+}
+
+
+
+.form-container button.primary-btn {
+  background-color: #ffd100;
+  color: #14213d;
+  border: none;
+  padding: 14px 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-bottom: 32px;  /* <-- This line gives you space below the button */
+}
+
+.form-container button.primary-btn:hover {
+  background-color: #fff200;
+}
+
+.contact-info-box {
+  max-width: 400px;        /* or 500px if you prefer wider */
+  margin: 40px auto 60px auto;  /* top and bottom space, centered horizontally */
+  padding: 30px 20px;      /* more padding for inner whitespace */
+  background-color: #fff;
+  color: #14213d;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+
+
+header.society-header {
+  border-bottom: 15px solid #fff; /* or 2px for a thinner line */
+}
+
+nav.main-nav {
+  border-top: 10px solid #fff; /* or 2px */
+}
+
+
+
+
+body {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body.page-visible {
+  opacity: 1;
+}

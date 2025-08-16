@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery - All Bengal Art Society</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Gallery container */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto 20px auto;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    /* Container for the button */
+    .view-more-container {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* View More button styling with animation */
+    .view-more-link {
+      display: inline-block;
+      padding: 10px 24px;
+      background-color: #ffd100;
+      color: #14213d;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      user-select: none;
+      box-shadow: 0 4px 8px rgba(255, 209, 0, 0.3);
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .view-more-link:hover {
+      background-color: #fff200;
+      color: #14213d;
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(255, 209, 0, 0.6);
+    }
+
+    /* Footer styles */
+    footer.site-footer {
+      background-color: #14213d;
+      color: #ffd100;
+      text-align: center;
+      padding: 16px 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      user-select: none;
+      margin-top: 40px;
+      border-top: 2px solid #ffd100;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .view-more-link {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+      }
+      .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 12px;
+        max-width: 100%;
+        margin: 30px auto 16px auto;
+      }
+      footer.site-footer {
+        font-size: 0.85rem;
+        padding: 14px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="society-header">
+  <div class="logo-area">
+    <img src="photos/logo.png" alt="All Bengal Art Society Logo" class="site-logo" />
+    <div class="site-title">
+      <span class="brand-main">All Bengal Art Society</span>
+      <span class="brand-sub">Where Young Artists Begin Their Journey</span>
+    </div>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#results">Results</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li>
+    <li><a href="membership.html">Membership</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="section">
+  <h2>Gallery</h2>
+
+  <div class="gallery">
+    <img src="photos/page1.jpg" alt="Artwork 1" />
+    <img src="photos/page2.jpg" alt="Artwork 2" />
+    <img src="photos/page3.jpg" alt="Artwork 3" />
+    <img src="photos/page4.jpg" alt="Artwork 4" />
+    <img src="photos/page5.jpg" alt="Artwork 5" />
+    <img src="photos/pag6.jpg" alt="Artwork 6" />
+    <img src="photos/page7.jpg" alt="Artwork 7" />
+    <img src="photos/page8.jpg" alt="Artwork 8" />
+  </div>
+
+  <div class="view-more-container">
+    <a href="https://drive.google.com/drive/folders/1XqAxL9Y9sHwEkbqraAqA-aKdRbGTpE2Y" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="view-more-link">
+      View More
+    </a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  &copy; 2025 All Bengal Art Society. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

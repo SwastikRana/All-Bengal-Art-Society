@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - All Bengal Art Society</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Scoped white box styling for contact info on Contact page */
+    #contact .contact-info-box {
+      max-width: 600px;
+      background: #fff;
+      color: #14213d;
+      margin: 160px 40px 40px 40px; /* Increased top and side margins */
+      padding: 30px 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    #contact .contact-info-box h3 {
+      margin-bottom: 12px;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    #contact .contact-info-box p {
+      font-size: 1.2rem;
+      margin: 8px 0;
+    }
+
+    /* Make email, phone and facebook clickable links */
+    #contact .contact-info-box p.email a,
+    #contact .contact-info-box p.phone a,
+    #contact .contact-info-box p.facebook a {
+      color: #14213d;
+      text-decoration: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    #contact .contact-info-box p.email a:hover,
+    #contact .contact-info-box p.phone a:hover,
+    #contact .contact-info-box p.facebook a:hover {
+      color: #ffd100;
+      text-decoration: underline;
+    }
+
+    /* Footer styles */
+    footer.site-footer {
+      background-color: #14213d;
+      color: #ffd100;
+      text-align: center;
+      padding: 16px 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      user-select: none;
+      margin-top: 40px;
+      border-top: 2px solid #ffd100;
+    }
+
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 600px) {
+      #contact .contact-info-box {
+        margin: 100px 20px 30px 20px; /* Increased side margins */
+        padding: 24px 12px;
+        max-width: 100%;
+      }
+      #contact .contact-info-box h3 {
+        font-size: 1.3rem;
+      }
+      #contact .contact-info-box p {
+        font-size: 1.1rem;
+      }
+      footer.site-footer {
+        font-size: 0.85rem;
+        padding: 14px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="society-header">
+  <div class="logo-area">
+    <img src="photos/logo.png" alt="All Bengal Art Society Logo" class="site-logo" />
+    <div class="site-title">
+      <span class="brand-main">
+        <a href="https://www.facebook.com/profile.php?id=100071870661921" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+          All Bengal Art Society
+        </a>
+      </span>
+      <span class="brand-sub">Where Young Artists Begin Their Journey</span>
+    </div>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#results">Results</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="membership.html">Membership</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="contact" class="section">
+  <div class="contact-info-box">
+    <p>Have questions or want to get in touch? Reach out to us via the following contact details.</p>
+
+    <h3>Email</h3>
+    <p class="email"><a href="mailto:allbengalartsociety@gmail.com">allbengalartsociety@gmail.com</a></p>
+
+    <h3>Phone</h3>
+    <p class="phone"><a href="tel:+918617468498">+91 8617468498</a></p>
+
+    <h3>Facebook</h3>
+    <p class="facebook"><a href="https://www.facebook.com/profile.php?id=100071870661921" target="_blank" rel="noopener noreferrer">All Bengal Art Society</a></p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  &copy; 2025 All Bengal Art Society. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

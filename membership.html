@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Membership - All Bengal Art Society</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Footer styles */
+    footer.site-footer {
+      background-color: #14213d;
+      color: #ffd100;
+      text-align: center;
+      padding: 16px 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      user-select: none;
+      margin-top: 40px;
+      border-top: 2px solid #ffd100;
+    }
+    /* Responsive footer */
+    @media (max-width: 850px) {
+      footer.site-footer {
+        font-size: 0.85rem;
+        padding: 14px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="society-header">
+  <div class="logo-area">
+    <img src="photos/logo.png" alt="All Bengal Art Society Logo" class="site-logo" />
+    <div class="site-title">
+      <span class="brand-main">All Bengal Art Society</span>
+      <span class="brand-sub">Where Young Artists Begin Their Journey</span>
+    </div>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#results">Results</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="membership.html" class="active">Membership</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="section">
+  <h2>Membership</h2>
+
+  <div class="form-container">
+    <form id="membership-form" action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" />
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea>
+
+      <div class="radio-group" role="radiogroup" aria-labelledby="join-label">
+        <span id="join-label">Want to join us?</span>
+        <label>
+          <input type="radio" name="join" value="yes" required /> Yes
+        </label>
+        <label>
+          <input type="radio" name="join" value="no" /> No
+        </label>
+      </div>
+
+      <div id="join-message" style="display:none; color: #ffd100; font-weight: 600; margin: 15px 0;">
+        Thank you for joining! Click SUBMIT you will be redirected to WhatsApp to share your ID Card picture (Aadhar Card).
+      </div>
+
+      <button type="submit" class="primary-btn">Submit</button>
+    </form>
+  </div>
+</main>
+
+<footer class="site-footer">
+  &copy; 2025 All Bengal Art Society. All rights reserved.
+</footer>
+
+<script>
+  // Show popup message after clicking Yes radio button
+  document.addEventListener('DOMContentLoaded', function() {
+    var joinRadios = document.querySelectorAll('input[name="join"]');
+    var joinMsg = document.getElementById('join-message');
+    if (!joinRadios.length || !joinMsg) return;
+    joinRadios.forEach(function(radio) {
+      radio.addEventListener('change', function() {
+        if (this.value === 'yes' && this.checked) {
+          joinMsg.style.display = 'block';
+        } else if (this.value === 'no' && this.checked) {
+          joinMsg.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+<script src="script.js"></script>
+</body>
+</html>
