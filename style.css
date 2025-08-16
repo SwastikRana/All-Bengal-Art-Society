@@ -265,7 +265,7 @@ section.results {
   section.about-us,
   section.results {
     padding: 30px 16px;
-    margin-top: 270px; /* Adjusted for smaller screens and bigger header */
+    margin-top: 20px; /* Adjusted for smaller screens and bigger header */
   }
 
   .site-main-heading {
@@ -698,11 +698,72 @@ nav.main-nav {
 
 
 
+
+/* Announcement Section Styling */
+/* Announcement Section Styling */
 body {
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  padding-top: 500px; /* Increased top padding for extra gap from fixed header/menu */
+  box-sizing: border-box;
+  margin: 0; /* Ensure no default margin */
 }
 
-body.page-visible {
-  opacity: 1;
+/* Announcement box: smaller and centered */
+.announcement-section {
+  width: 340px;
+  margin: 40px auto 20px auto; /* Added 40px top margin for extra gap from menu */
+  padding: 20px 15px 10px 15px; /* Padding remains same */
+  background: #fffbe9;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(20,33,61,0.08);
+  text-align: center;
+  box-sizing: border-box;
 }
+
+.announcement-section h2 {
+  font-size: 1.25rem;
+  color: #072a75;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  margin-top: 0; /* Remove top margin for tighter layout */
+}
+
+.announcement-section img {
+  width: 96%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 0; /* No padding at bottom */
+  margin-bottom: 0;  /* Remove image bottom margin */
+}
+
+
+
+
+
+
+
+body {
+  padding-top: 300px !important; /* Adjust this value as needed */
+  margin: 0 !important;
+}
+
+
+section.hero,
+section.about-us,
+section.results {
+  margin-top: 20px !important;
+  padding-top: 0 !important;
+}
+
+/* If the header or nav is fixed and pushing content, verify and adjust padding-top accordingly. */
+
+
+
+
+
+
+
